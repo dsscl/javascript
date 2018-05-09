@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="../base/weui.css"/>
+    <link rel="stylesheet" type="text/css" href="search.css"/>
+  </head>
+  <body>
+    <div class="vux-search-box" style="width: 100%">
+        <div class="weui-search-bar">
+            <form class="weui-search-bar__form">
+                <div class="weui-search-bar__box">
+                    <i class="weui-icon-search"></i>
+                    <input id="searchVal" type="search" autocomplete="off" placeholder="输入科室名或者医生姓名" class="weui-search-bar__input">
+                    <a href="javascript:" class="weui-icon-clear" style="display: none;"></a>
+                </div>
+                <label for="search_input_w4ptl" class="weui-search-bar__label">
+                    <i class="weui-icon-search"></i>
+                    <span>输入科室名或者医生姓名</span>
+                </label>
+            </form>
+            <a id="searchIn" href="javascript:" class="weui-search-bar__cancel-btn displayNone">搜索</a>
+            <a id="cancelIn" href="javascript:" class="weui-search-bar__cancel-btn displayNone">取消</a>
+        </div>
+        <div class="weui-cells vux-search_show" style="display: none;"></div>
+    </div>
+    <script type="text/javascript" src="../base/jquery.min.js"></script>
+    <script type="text/javascript" src="search.js"></script>
+  </body>
+</html>

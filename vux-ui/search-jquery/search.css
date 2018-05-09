@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box
+}
+input {
+  border: none;
+  outline: none;
+  padding: 0;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #CDCDCD;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #CDCDCD;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #CDCDCD;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #CDCDCD;
+}
+a{
+  text-decoration: none;
+}
+
+/* css */
+.vux-search-box .weui-search-bar {
+  height: 44px;
+  padding: 6px 14px;
+  background: #F6F6F6; }
+.vux-search-box .weui-search-bar__form {
+  border-radius: 4px; }
+.vux-search-box .weui-search-bar__form:after {
+  border: none; }
+.vux-search-box .weui-search-bar__form,
+.vux-search-box .weui-search-bar__cancel-btn,
+.vux-search-box .weui-icon-search:before {
+  line-height: 32px; }
+.vux-search-box .weui-search-bar__label {
+  line-height: 30px; }
+.vux-search-box .weui-icon-clear {
+  line-height: 32px; }
+.vux-search-box .weui-search-bar__input {
+  text-align: left; }
+
+/* scss */
+/* .vux-search-box {
+  .weui-search-bar {
+    height: 44px;
+    padding: 6px 14px;
+    background: #F6F6F6;
+  }
+  .weui-search-bar__form {
+    border-radius: 4px;
+  }
+  .weui-search-bar__form:after {
+    border: none;
+  }
+  .weui-search-bar__form,
+  .weui-search-bar__cancel-btn,
+  .weui-icon-search:before {
+    line-height: 32px;
+  }
+  .weui-search-bar__label {
+    line-height: 30px;
+  }
+  .weui-icon-clear {
+    line-height: 32px;
+  }
+  .weui-search-bar__input {
+    text-align: left;
+  }
+} */
