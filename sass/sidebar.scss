@@ -1,0 +1,75 @@
+// 左侧菜单sidebar组件
+.ts-sidewrapper {
+  // 菜单图标
+  [class ^= 'el-icon-menu'] {
+    width: 18px;
+    height: 18px;
+    transform: translateY(3px);
+  }
+
+  // 子菜单
+  .child-menu-item {
+    &.el-menu-item {
+      padding-left: 20px !important;
+      [class ^= 'el-icon-'] {
+        width: 12px;
+        height: 12px;
+        transform: translateY(1px);
+      }
+      .el-icon-message {
+        transform: translate(-4px, 1px);
+      }
+    }
+    &.el-menu-item:before {
+      content: '' !important;
+      border-left: none !important;
+    }
+    &.collapse-menu-item {
+      padding-left: 30px !important;
+      [class ^= 'el-icon-'] {
+          font-size: 12px !important;
+          left: 20px !important;
+          transform: translate(-50%, 1px) !important;
+      }
+    }
+  }
+
+  // 用户中心
+  .el-icon-menu-union {
+    background: url('../img/menuIcon/menu-union.png') no-repeat;
+  }
+  .el-icon-menu-hospital {
+    background: url('../img/menuIcon/menu-hospital.png') no-repeat;
+  }
+  .el-icon-menu-department {
+    background: url('../img/menuIcon/menu-department.png') no-repeat;
+  }
+  .el-icon-menu-user {
+    background: url('../img/menuIcon/menu-user.png') no-repeat;
+  }
+  .el-icon-menu-role {
+    background: url('../img/menuIcon/menu-role.png') no-repeat;
+  }
+
+  // 远程病理
+  .el-icon-menu-bl-applyToMe {
+    background: url('../img/menuIcon/menu-bl-applyToMe.png') no-repeat;
+  }
+  .el-icon-menu-bl-applyBySelf {
+    background: url('../img/menuIcon/menu-bl-applyBySelf.png') no-repeat;
+  }
+  .el-icon-menu-bl-applyConsult {
+    background: url('../img/menuIcon/menu-bl-applyConsult.png') no-repeat;
+  }
+  .el-icon-menu-bl-uploadManage {
+    background: url('../img/menuIcon/menu-bl-uploadManage.png') no-repeat;
+  }
+
+  // 远程门诊
+  .el-icon-menu-mz-stopManage {
+    background: url('../img/menuIcon/menu-mz-stopManage.png') no-repeat;
+  }
+  .el-icon-menu-mz-evaluateManage {
+    background: url('../img/menuIcon/menu-mz-evaluateManage.png') no-repeat;
+  }
+}

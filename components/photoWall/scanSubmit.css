@@ -1,0 +1,157 @@
+.container{
+	padding-top: 10px;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+.progress-msg{
+	width: 1200px;
+	float: left;
+	margin-top: 50px;
+}
+.progress-msg img{
+	width: 100%;
+}
+.guide{
+	width: 1000px;
+	height: 60px;
+	background: #fffae4;
+	line-height: 60px;
+	padding-left: 50px;
+	float: left;
+	margin-top: 50px;
+	margin-left: 100px;
+	color: #e79800;
+	border: 1px solid #eae8c0;
+}
+#submitContainerLeft{
+	margin-top: 30px;
+	width: 300px;
+	margin-left: 100px;
+	float: left;
+}
+#submitContainerMiddle{
+	margin-top: 30px;
+	width: 300px;
+	margin-left: 50px;
+	float: left;
+}
+#submitContainerRight{
+	margin-top: 30px;
+	width: 300px;
+	margin-left: 50px;
+	float: left;
+}
+.please{
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+#scanSubmit{
+	width: 500px;
+}
+.msg{
+	width: 1200px;
+	float: left;
+	border-bottom: 1px dashed #999;
+	padding-bottom: 30px;
+}
+.notice{
+	display: block;
+	margin-top: 30px;	
+	line-height: 20px;
+	margin-left: 120px;
+}
+
+#upload-pic-btn{
+	margin-top: 20px;
+	margin-left: 120px;
+}
+/*图片示例*/
+.example1,.example2{
+	margin-left: 100px;
+	float: left;
+	padding: 20px 20px;
+}
+.example b{
+	display: block;
+}
+.example-pic{
+	border: 1px solid #000;
+	float: left;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+.example2 .example-pic img{
+	max-width: 390px;
+	min-width: 390px;
+	min-height: 273px;
+}
+.step{
+	width: 1200px;
+	margin-top: 50px;
+	text-align: center;
+	float: left;
+}
+.step button{
+	padding: 10px 20px;
+}
+.step button:first-of-type{
+	margin-right: 30px;
+}
+.doctor-show,.nurse-show{
+	display: none;
+}
+.file-width{
+	max-width: 195px;
+	min-height: 160px;
+	max-height: 160px;
+	margin-bottom: 15px;
+}
+
+/*上传证件*/
+.uploadForm {
+	margin: 30px 0 0 50px;
+	overflow: hidden;
+}
+.uploadForm .exptPhotoWrap{
+	margin: 10px;
+	float: left;
+	position: relative;
+	border: 1px solid #e6e6e6;
+}
+.uploadForm .exptPhotoWrap.bordernone {
+	border: none;
+}
+
+.uploadForm .exptPhotoWrap .fileInput{
+	position: absolute;
+	opacity: 0;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}
+.uploadForm .exptPhotoWrap .hoverimg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+	width: 120px;
+	height: 120px;
+	background: url("/images/furtherEducationPc/chakan.png") no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+    display: none;
+}
+.uploadForm .exptPhotoWrap .picdelBtn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	border: none;
+	width: 18px;
+	height: 18px;
+	background: url(/images/furtherEducationPc/icon-redclose_05.jpg) no-repeat center/100% 100%;
+	display: none;
+}
+.uploadForm .exptPhotoWrap:hover .hoverimg,
+.uploadForm .exptPhotoWrap:hover .picdelBtn{
+	display: block;
+}
