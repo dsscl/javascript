@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>My New Pen!</title>
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/index.processed.css">
+</head>
+<body>
+
+  <!--
+
+    Wow! What do you want to build?
+
+    You have so many possibilities right now... Looking for something to kick off?
+    How about a simple folio page to show off everything you're going to make!
+
+  -->
+  <div class="autumn" style="width:100px;height:100px;background-color:orange"></div>
+  <div id="target" style="width:100px;height:100px;background-color:pink"></div>
+  <div id="target2" style="width:100px;height:100px;background-color:purple"></div>
+
+  <!-- Scripts -->
+  <script src="./drag.js"></script>
+  <script src="./drag-oo.js"></script>
+  <script>
+    window.onload = function() {
+        new Drag('target')
+        new Drag('target2')
+    }
+  </script>
+</body>
+</html>

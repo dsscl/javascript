@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./scroll.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div id="scroll_area">
+    <div class="scroll_body">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+
+    <div class="buttons">
+      <button class="left">move left</button>
+      <button class="right">move right</button>
+      <button class="stop">stop</button>
+    </div>
+  </div>
+
+<!--   简易 -->
+<!--   <script src="./scroll.js"></script> -->
+<!--   面向对象重构 -->
+  <script src="./scroll-oo.js"></script>
+  <script>
+    var scroll = new Scroll(document.querySelector('#scroll_area'))
+    var left_btn = document.querySelector('.left')
+    var right_btn = document.querySelector('.right')
+    var stop_btn = document.querySelector('.stop')
+
+    left_btn.onclick = function() {
+      scroll.moveLeft()
+    }
+    right_btn.onclick = function() {
+      scroll.moveRight()
+    }
+    stop_btn.onclick = function() {
+      scroll.stop()
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./tab.css" />
+  <title>Document</title>
+</head>
+<body>
+  <div class="box" id="tab_wrap">
+    <ul class="tab_options">
+      <li data-index="0" class="item active">tab1</li>
+      <li data-index="1" class="item">tab2</li>
+      <li data-index="2" class="item">tab3</li>
+      <li data-index="3" class="item">tab4</li>
+    </ul>
+    <div class="tab_content">
+      <div class="item_box active">tab box1</div>
+      <div class="item_box">tab box2</div>
+      <div class="item_box">tab box3</div>
+      <div class="item_box">tab box4</div>
+    </div>
+  </div>
+  <button class="prev">Prev</button>
+  <button class="next">Next</button>
+
+  <div class="box" id="tab_wrap1">
+    <ul class="tab_options">
+      <li data-index="0" class="item active">tab1</li>
+      <li data-index="1" class="item">tab2</li>
+      <li data-index="2" class="item">tab3</li>
+      <li data-index="3" class="item">tab4</li>
+    </ul>
+    <div class="tab_content">
+      <div class="item_box active">tab box1</div>
+      <div class="item_box">tab box2</div>
+      <div class="item_box">tab box3</div>
+      <div class="item_box">tab box4</div>
+    </div>
+  </div>
+  <button class="prev1">Prev</button>
+  <button class="next1">Next</button>
+  <!--   面向对象将选项卡封装为一个对象 -->
+  <script src="./tab.js"></script>
+  <script>
+    window.onload = function() {
+      var tab = new Tab(document.querySelector('#tab_wrap'))
+      document.querySelector('.next').addEventListener('click', function() {
+        tab.next()
+        console.log(tab.getIndex())
+      }, false)
+      document.querySelector('.prev').addEventListener('click', function() {
+        tab.pre()
+        console.log(tab.getIndex())
+      }, false)
+
+      var tab1 = new Tab(document.querySelector('#tab_wrap1'))
+      document.querySelector('.next1').addEventListener('click', function() {
+        tab1.next()
+        console.log(tab1.getIndex())
+      }, false)
+      document.querySelector('.prev1').addEventListener('click', function() {
+        tab1.pre()
+        console.log(tab1.getIndex())
+      }, false)
+    }
+  </script>
+<!--    // 切换选项卡（简易） -->
+<!--   <script>
+    window.onload = function() {
+      var tabHeader = document.querySelector('.tab_options')
+      var items = tabHeader.children
+      var tabContent = document.querySelector('.tab_content')
+      var itemboxes = tabContent.children
+      var index = 0
+      tabHeader.addEventListener('click', function(e) {
+        var a = [].slice.call(e.target.classList).indexOf('item')
+        if(a > -1 && index != e.target.dataset.index) {
+          items[index].classList.remove('active')
+          itemboxes[index].classList.remove('active')
+          index = e.target.dataset.index
+          items[index].classList.add('active')
+          itemboxes[index].classList.add('active')
+        }
+      }, false)
+    }
+  </script> -->
+</body>
+</html>
